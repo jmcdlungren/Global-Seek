@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Seek</title>
     <link rel="icon" href="" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="./Assets/CSS/style.css" />
 </head>
 
-<body>
+<body >
     <header>
         <h1>
             Global Seek: Know Before You Go
@@ -21,33 +21,36 @@
         </h2>
     </header>
 
-    <main>
-        <section>
-            <h3>
-                Where do you want to know about:
-            </h3>
-            <form>
-                <input type="text" placeholder="Search" />
-                <button class="btn">Search!</button>
-            </form>
+    <main class="grid-x grid-padding-x">
+        <section class="cell small-4">
+            <div>
+                <h3>
+                    Where do you want to know about:
+                </h3>
+                <form>
+                    <input type="text" placeholder="Search" />
+                    <button class="btn">Search!</button>
+                </form>
+            </div>
+            <div>
+                <h3>
+                    Results:
+                </h3>
+                <div class="events"></div>
+                <div class="currency"></div>
+                <div class="weather"></div>
+            </div>
         </section>
 
-        <section>
+        <section class="cell small-4">
             <h3>
-                Results:
+                Favorites:
             </h3>
-            <div class="events"></div>
-            <div class="currency"></div>
-            <div class="weather"></div>
+            <ul class="favorites"></ul>
         </section>
     </main>
 
-    <section>
-        <h3>
-            Favorites:
-        </h3>
-        <ul class="favorites"></ul>
-    </section>
+    
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
