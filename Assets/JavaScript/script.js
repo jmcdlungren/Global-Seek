@@ -60,8 +60,8 @@ $(".btn").on("click", function (event) {
 
 
 
-            // function printResults(resultObj) {
-            //     console.log(resultObj);
+            function showNews(resultObj) {
+                console.log(resultObj);
               
             //     // set up `<div>` to hold result content
             //     var resultCard = document.createElement('div');
@@ -102,7 +102,7 @@ $(".btn").on("click", function (event) {
             //     resultBody.append(titleEl, bodyContentEl, linkButtonEl);
               
             //     resultContentEl.append(resultCard);
-            //   }
+              }
 
 
 
