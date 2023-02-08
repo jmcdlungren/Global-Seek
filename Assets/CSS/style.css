@@ -1,15 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    margin-top: ;
+    font-family: 'Poppins';
+}
 header {
     --white: #fff;
-    --dark-blue: #13293d;
+    --dark-blue: hsl(104, 76%, 87%);
     --tan: #d8a47f;
     /* You can use it with any value that is repeated throughout the sheet */
     --border-radius: 50px;
   }
-  
+  .cell {
+    background-color: rgb(73, 164, 111);
+  }
+
   body {
     font-size: 16px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
+    background-color: azure;
   }
+#allBox {
+    display: flex;
+    justify-content: space-between;
+
+}
