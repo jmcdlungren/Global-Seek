@@ -52,7 +52,7 @@ input {
 #search-section {
     display: flex;
     flex-direction: column;
-    margin-left: 1rem;
+    margin: 1rem 0 0 1rem;
 }
 
 #search-input {
@@ -89,7 +89,7 @@ input {
     right: 16px;
     font-size: 18px;
     /* margin-top: 10vh; */
-    margin-right: 1rem;
+    margin: 1rem 1rem 1rem 0;
 
 }
 
