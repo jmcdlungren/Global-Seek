@@ -6,7 +6,10 @@
     box-sizing: border-box;
     font-family: 'Poppins';
     font-size: 25px;
+}
 
+body{
+    background-color: azure;
 }
 
 .btn{
@@ -16,6 +19,7 @@
     border-radius: 5px;
     cursor: pointer;
     margin-left: 10px;
+    margin-top: 10px;
 }
 
 input{
@@ -29,8 +33,9 @@ input{
 }
 
 .globalHeader{
-    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
+    
 }
 
 .travel{
