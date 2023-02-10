@@ -5,16 +5,38 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
-    font-size: 25px;
+    font-size: 12pt;
 }
 
 body {
     background-color: azure;
 }
 
+main {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 26pt;
+}
+
+h2 {
+    font-size: 24pt;
+}
+
+h3 {
+    font-size: 18pt;
+}
+
+h4 {
+    font-size: 16pt;
+}
+
 .btn {
     border: 1px solid black;
-    width: 10%;
+    width: 25rem;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -24,9 +46,19 @@ body {
 
 input {
     margin-left: 10px;
+    width: 25rem;
 }
 
+#search-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
 
+#search-input {
+    display: flex;
+    flex-direction: column;
+}
 
 .btn:hover {
     background-color: #E8E8E8;
@@ -51,16 +83,29 @@ input {
 
 .favs {
     /* position: absolute; */
+    border: 3px solid black;
+    width: 25rem;
     top: 8px;
     right: 16px;
     font-size: 18px;
-    margin-top: 10vh;
-    margin-right: 10px;
+    /* margin-top: 10vh; */
+    margin-right: 1rem;
 
 }
 
+.favs h3 {
+    margin: 5px;
+}
+
 .rSection {
-    padding: 70px 0;
+    /* padding: 70px 0; */
+    border: 3px solid black;
+    margin: 1rem;
+    background-color: rgb(219, 240, 250);
+}
+
+.rSection h3 {
+    margin: 10px;
 }
 
 .opts {
@@ -68,7 +113,7 @@ input {
     width: 33%;
     /* height: 50vh; */
     /* text-align: center; */
-    margin: 2px;
+    margin: 8px;
 }
 
 #articles {
