@@ -39,30 +39,82 @@
 
 
 
-var city = $("input").val();
 
 
-$(".btn").on("click", function (event) {
-    event.preventDefault();
+
+
+$(".btn").on("click", showNews); 
+
+function showNews() {
     var city = $("input").val();
+
     
 
 
-
-
-    var newsAPI = "FNt3X7MqTIYI7L6IURJmxXEBfgnmbczEt0aSPI4T";
-    var newsURL = "https://api.thenewsapi.com/v1/news/all?api_token=" + newsAPI + "&search" + city + "&language=en";
-    fetch(newsURL).then(res => {
-        return res.json()
+    var newsAPI = "ab3780e4108e48e2bdecf81068c21a51";
+    var newsURL = "https://gnews.io/api/v4/search?q=" + city + "&lang=en" + "&max=5" + "&apikey=" + newsAPI;
+    fetch(newsURL).then(function (response) {
+        return response.json();
     })
-        .then(data => {
+        .then(function (data) {
             console.log(data)
 
+            var events = $(".events");
 
 
-            function showNews(resultObj) {
-                console.log(resultObj);
+            events.removeClass("events");
+
+            var titleOne = $(".event-title-1");
+            var linkOne = $(".event-link-1");
+            var infoOne = $(".event-info-1");
+            
+            titleOne.text(data.articles[0].title)
+            linkOne.attr('href', data.articles[0].url)
+            infoOne.text(data.articles[0].description)
+
+            var titleTwo = $(".event-title-2");
+            var linkTwo = $(".event-link-2");
+            var infoTwo = $(".event-info-2");
+            
+            titleTwo.text(data.articles[1].title)
+            infoTwo.text(data.articles[1].description)
+            linkTwo.attr('href', data.articles[1].url)
+
+            var titleThree = $(".event-title-3");
+            var linkThree = $(".event-link-3");
+            var infoThree = $(".event-info-3");
+            
+            titleThree.text(data.articles[2].title)
+            infoThree.text(data.articles[2].description)
+            linkThree.attr('href', data.articles[2].url)
+
+            var titleFour = $(".event-title-4");
+            var linkFour = $(".event-link-4");
+            var infoFour = $(".event-info-4");
+            
+            titleFour.text(data.articles[3].title)
+            infoFour.text(data.articles[3].description)
+            linkFour.attr('href', data.articles[3].url)
+
+            var titleFive = $(".event-title-5");
+            var linkFive = $(".event-link-5");
+            var infoFive = $(".event-info-5");
+            
+            titleFive.text(data.articles[4].title)
+            infoFive.text(data.articles[4].description)
+            linkFive.attr('href', data.articles[4].url)
+
+        })
+
+
+            
               
+    }
+
+
+
+
+
             //     // set up `<div>` to hold result content
             //     var resultCard = document.createElement('div');
             //     resultCard.classList.add('card', 'bg-light', 'text-dark', 'mb-3', 'p-3');
@@ -102,7 +154,6 @@ $(".btn").on("click", function (event) {
             //     resultBody.append(titleEl, bodyContentEl, linkButtonEl);
               
             //     resultContentEl.append(resultCard);
-              }
 
 
 
@@ -187,4 +238,3 @@ $(".btn").on("click", function (event) {
 
 
 
-})});
