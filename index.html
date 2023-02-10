@@ -7,52 +7,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Seek</title>
     <link rel="icon" href="" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css"
-        crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css"
+        crossorigin="anonymous" /> -->
     <link rel="stylesheet" href="./Assets/CSS/style.css" />
 </head>
 
 <body>
-    <header class="grid-y grid-margin-x grid-padding-y">
-        <h1 class="cell small-4 large-offset-2 align-justify">
+    <header style="background-color: hsl(104, 76%, 87%);">
+        <h1 class="globalHeader">
             Global Seek: Know Before You Go
         </h1>
-        <h2 class="grid-x align-center">
+        <h2 class="travel">
             Travel & News
         </h2>
     </header>
 
-    <main class="grid-x grid-padding-x align-justify">
-        <section class="cell small-4">
-            <div>
+    <main>
+        <section>
+            <div id="search-section">
                 <h3>
                     Where do you want to know about:
                 </h3>
-                <form>
-                    <input type="text" placeholder="Search" />
+                <div id="search-input">
+                    <input type="text" placeholder="Enter City Here" />
                     <button class="btn">Search!</button>
-                </form>
+                </div>
             </div>
-            <div>
+            <div class="rSection">
                 <h3>
                     Results:
                 </h3>
-                <section class="grid-x grid-margin-x">
-                    <div class="cell large-auto">
+                <section class="options">
+                    <div class="opts">
                         <h4>Events</h4>
-                        <div class="events"></div>>
+                        <div class="events">
+                            <div id="articles">
+                                <a class="event-link-1" target="_blank">
+                                    <h5 class="event-title-1"></h5>
+                                </a>
+                                <p class="event-info-1"></p>
+                            </div>
+                            <div id="articles">
+                                <a class="event-link-2" target="_blank">
+                                    <h5 class="event-title-2"></h5>
+                                </a>
+                                <p class="event-info-2"></p>
+                            </div>
+                            <div id="articles">
+                                <a class="event-link-3" target="_blank">
+                                    <h5 class="event-title-3"></h5>
+                                </a>
+                                <p class="event-info-3"></p>
+                            </div>
+                            <div id="articles">
+                                <a class="event-link-4" target="_blank">
+                                    <h5 class="event-title-4"></h5>
+                                </a>
+                                <p class="event-info-4"></p>
+                            </div>
+                            <div>
+                                <a class="event-link-5" target="_blank">
+                                    <h5 class="event-title-5"></h5>
+                                </a>
+                                <p class="event-info-5"></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cell large-auto">
+                    <div class="opts">
                         <h4>Currency</h4>
-                        <div class="currency"></div>>
+                        <div class="currency"></div>
                     </div>
-                <section class="cell large-auto">
-                    <h4>Weather</h4>
-                    <div class="weather"></div>>
+                    <div class="opts">
+                        <h4>Weather</h4>
+                        <div class="weather"></div>
+                    </div>
+                </section>
             </div>
         </section>
 
-        <section class="cell small-4 ">
+        <section class="favs ">
             <h3>
                 Favorites:
             </h3>

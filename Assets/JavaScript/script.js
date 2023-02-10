@@ -1,36 +1,76 @@
-// selecting each element from the html doc
-const search_btn = document.querySelector('.btn');
-const city_input =document.querySelector('#city-input'); // from the user entering the city name
-const population_display = document.querySelector('#population-display');
-const weather_events = document.querySelector('.events');
-const weather_currency = document.querySelector('.currency');
-const weather_temp = document.querySelector('weather');
-const favorites = document.querySelector('.favorites');
 
-// will need to create additional elements on the html doc for the "city_input" and "population-display"
 
- 
 
-// api focuses on getting global city and region data
-// event listener to generate results from the data
-search_btn.addEventListener('click', function(){
-    fetch("https://wft-geo-db.p.rapidapi.com/v1")
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
+
+$(".btn").on("click", showNews); 
+
+function showNews() {
+    var city = $("input").val();
+
+    
+
+
+    var newsAPI = "ab3780e4108e48e2bdecf81068c21a51";
+    var newsURL = "https://gnews.io/api/v4/search?q=" + city + "&lang=en" + "&max=5" + "&apikey=" + newsAPI;
+    fetch(newsURL).then(function (response) {
+        return response.json();
     })
-})
+        .then(function (data) {
+            console.log(data)
 
-//  function created to allow the user to type in the city name to the input field  instead of selecting from list
-search_btn.addEventListener('click', function(){
-    const entered_city_name = city_input.value;
-    const selected_city = US_CITIES.find(city => city.name.toLowerCase() === entered_city_name.toLowerCase());
-    console.log(`Selected city: ${selected_city.name}`);
+            var events = $(".events");
 
-    fetch(`https://wft-geo-db.p.rapidapi.com/v1/geo/cities/${selected_city.code}`)
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-        population_display.textContent = `Population of ${selected_city.name}: ${data.population}`
-    });
-});
+
+            events.removeClass("events");
+
+            var titleOne = $(".event-title-1");
+            var linkOne = $(".event-link-1");
+            var infoOne = $(".event-info-1");
+            
+            titleOne.text(data.articles[0].title)
+            linkOne.attr('href', data.articles[0].url)
+            infoOne.text(data.articles[0].description)
+
+            var titleTwo = $(".event-title-2");
+            var linkTwo = $(".event-link-2");
+            var infoTwo = $(".event-info-2");
+            
+            titleTwo.text(data.articles[1].title)
+            infoTwo.text(data.articles[1].description)
+            linkTwo.attr('href', data.articles[1].url)
+
+            var titleThree = $(".event-title-3");
+            var linkThree = $(".event-link-3");
+            var infoThree = $(".event-info-3");
+            
+            titleThree.text(data.articles[2].title)
+            infoThree.text(data.articles[2].description)
+            linkThree.attr('href', data.articles[2].url)
+
+            var titleFour = $(".event-title-4");
+            var linkFour = $(".event-link-4");
+            var infoFour = $(".event-info-4");
+            
+            titleFour.text(data.articles[3].title)
+            infoFour.text(data.articles[3].description)
+            linkFour.attr('href', data.articles[3].url)
+
+            var titleFive = $(".event-title-5");
+            var linkFive = $(".event-link-5");
+            var infoFive = $(".event-info-5");
+            
+            titleFive.text(data.articles[4].title)
+            infoFive.text(data.articles[4].description)
+            linkFive.attr('href', data.articles[4].url)
+
+        })
+
+
+            
+              
+    }
+
+
+
+
+

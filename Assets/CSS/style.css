@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-size: 12pt;
+}
+
+body {
+    background-color: azure;
+}
+
+main {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 26pt;
+}
+
+h2 {
+    font-size: 24pt;
+}
+
+h3 {
+    font-size: 18pt;
+}
+
+h4 {
+    font-size: 16pt;
+}
+
+.btn {
+    border: 1px solid black;
+    width: 25rem;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+input {
+    margin-left: 10px;
+    width: 25rem;
+}
+
+#search-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+#search-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn:hover {
+    background-color: #E8E8E8;
+}
+
+.globalHeader {
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.travel {
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+.favs {
+    /* position: absolute; */
+    border: 3px solid black;
+    width: 25rem;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+    /* margin-top: 10vh; */
+    margin-right: 1rem;
+
+}
+
+.favs h3 {
+    margin: 5px;
+}
+
+.rSection {
+    /* padding: 70px 0; */
+    border: 3px solid black;
+    margin: 1rem;
+    background-color: rgb(219, 240, 250);
+}
+
+.rSection h3 {
+    margin: 10px;
+}
+
+.opts {
+    border: 3px solid black;
+    width: 33%;
+    /* height: 50vh; */
+    /* text-align: center; */
+    margin: 8px;
+}
+
+#articles {
+    border-bottom: 5px solid darkblue;
+    margin: 2px;
+}
+
+.events {
+    display: none;
+}
