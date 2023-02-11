@@ -48,6 +48,7 @@ h5 {
     cursor: pointer;
     margin-left: 10px;
     margin-top: 10px;
+    font-size: 12pt;
 }
 
 input {
@@ -66,10 +67,6 @@ input {
 #search-input {
     display: flex;
     flex-direction: column;
-}
-
-.btn {
-    font-size: 12pt;
 }
 
 .btn:hover {
@@ -94,19 +91,36 @@ input {
 }
 
 .favs {
-    /* position: absolute; */
     border: 3px solid black;
     width: 25rem;
     top: 8px;
-    right: 16px;
+    /* right: 16px; */
     font-size: 18px;
-    /* margin-top: 10vh; */
     margin: 1rem 1rem 1rem 0;
-
 }
 
 .favs h3 {
     margin: 5px;
+}
+
+.favorites {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.fav-btn {
+    border: 1px solid black;
+    width: 15rem;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 15px 10px 15px;
+    font-size: 12pt;
+}
+
+.fav-btn:hover {
+    background-color: #E8E8E8;
 }
 
 .rSection {
@@ -145,7 +159,6 @@ input {
 
 .events {
     display: none;
-    
 }
 
 .event-links {
@@ -155,11 +168,18 @@ input {
     font-size: 16pt;
 }
 
-
-
 .event-links:hover {
     cursor: pointer;
     color: maroon;
     font-weight: bold;
-    
+}
+
+.weather {
+    display: none;
+}
+
+#weather-card {
+    border: 1px solid darkblue;
+    margin: 5px;
+    padding: 0 3px 0 3px;
 }
