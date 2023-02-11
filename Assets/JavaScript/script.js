@@ -6,12 +6,12 @@ $(".btn").on("click", showResults);
 
 function showResults() {
     clickDisplay();
+    renderHistory();
     showNews();
 }
 
 function clickDisplay() {
     rDisplay = $(".rDisplay");
-
     rDisplay.removeClass("rDisplay");
 }
 
@@ -29,10 +29,10 @@ function showNews() {
         .then(function (data) {
             console.log(data)
 
-            // var events = $(".events");
+            var events = $(".events");
 
 
-            // events.removeClass("events");
+            events.removeClass("events");
 
             var titleOne = $(".event-title-1");
             var linkOne = $(".event-link-1");
@@ -76,7 +76,7 @@ function showNews() {
 
 
 
-            renderHistory();
+            
         })
 
     
