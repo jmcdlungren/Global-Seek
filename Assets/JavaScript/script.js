@@ -2,7 +2,18 @@
 
 
 
-$(".btn").on("click", showNews);
+$(".btn").on("click", showResults);
+
+function showResults() {
+    clickDisplay();
+    showNews();
+}
+
+function clickDisplay() {
+    rDisplay = $(".rDisplay");
+
+    rDisplay.removeClass("rDisplay");
+}
 
 function showNews() {
     var city = $("input").val();
@@ -18,10 +29,10 @@ function showNews() {
         .then(function (data) {
             console.log(data)
 
-            var events = $(".events");
+            // var events = $(".events");
 
 
-            events.removeClass("events");
+            // events.removeClass("events");
 
             var titleOne = $(".event-title-1");
             var linkOne = $(".event-link-1");

@@ -104,6 +104,10 @@ input {
     background-color: rgb(219, 240, 250);
 }
 
+.rDisplay {
+    display: none;
+}
+
 .rSection h3 {
     margin: 10px;
 }
@@ -121,6 +125,6 @@ input {
     margin: 2px;
 }
 
-.events {
+/* .events {
     display: none;
-}
+} */
