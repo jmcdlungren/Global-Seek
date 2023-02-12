@@ -93,7 +93,7 @@ input {
 .favs {
     border: 3px solid black;
     width: 25rem;
-    top: 8px;
+    /* top: 8px; */
     /* right: 16px; */
     font-size: 18px;
     margin: 1rem 1rem 1rem 0;
@@ -106,7 +106,8 @@ input {
 .favorites {
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    align-items: center;
+    
 }
 
 .fav-btn {

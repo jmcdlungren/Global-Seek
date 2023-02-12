@@ -6,7 +6,7 @@ $(".btn").on("click", showResults);
 
 function showResults() {
     clickDisplay();
-    renderHistory();
+    
     showNews();
     // enter currency function here
     getWeather();
@@ -77,7 +77,7 @@ function showNews() {
             linkFive.attr('href', data.articles[4].url)
 
 
-
+            renderHistory();
             
         })
 
@@ -105,15 +105,6 @@ function getWeather(cityInput) {
             console.log(data)
 
 
-            // var cityName = $("#city-name");
-            // var icon = $("#emoji");
-            // var iconSrc = "http://openweathermap.org/img/wn/" + data.weather[0].icon + ".png"
-            // var currentTemp = $("#current-temp");
-            // var wind = $("#wind");
-            // var humidity = $("#humidity");
-            // var baseDay = dayjs().format('D')
-            // var startDay = Number(baseDay);
-            // var today = dayjs().format('M/' + startDay + '/YYYY');
 
 
             weather.removeClass("weather");
@@ -208,6 +199,8 @@ function getWeather(cityInput) {
                     windFive.text(data.list[35].wind.speed + " mph")
                     humidityFive.text(data.list[35].main.humidity + "%")
 
+
+                    
                 })
 
         })
@@ -234,11 +227,12 @@ function renderHistory() {
         var recentSearch = document.createElement('button');
         recentSearch.classList.add('fav-btn')
         recentSearch.setAttribute('data-city', history[i])
+        
+        
         if(recentSearch.textContent = history[i]) {
             favorites.append(recentSearch);
+            recentSearch.addEventListener("click", historySearch)
         }
-        recentSearch.addEventListener("click", historySearch)
-        
     }
 }
 
