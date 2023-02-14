@@ -33,7 +33,7 @@
                     <button class="btn">Search!</button>
                 </div>
             </div>
-            <div class="rSection">
+            <div class="rSection rDisplay">
                 <h3>
                     Results:
                 </h3>
@@ -42,31 +42,31 @@
                         <h4>Events</h4>
                         <div class="events">
                             <div id="articles">
-                                <a class="event-link-1" target="_blank">
+                                <a class="event-links event-link-1" target="_blank">
                                     <h5 class="event-title-1"></h5>
                                 </a>
                                 <p class="event-info-1"></p>
                             </div>
                             <div id="articles">
-                                <a class="event-link-2" target="_blank">
+                                <a class="event-links event-link-2" target="_blank">
                                     <h5 class="event-title-2"></h5>
                                 </a>
                                 <p class="event-info-2"></p>
                             </div>
                             <div id="articles">
-                                <a class="event-link-3" target="_blank">
+                                <a class="event-links event-link-3" target="_blank">
                                     <h5 class="event-title-3"></h5>
                                 </a>
                                 <p class="event-info-3"></p>
                             </div>
                             <div id="articles">
-                                <a class="event-link-4" target="_blank">
+                                <a class="event-links event-link-4" target="_blank">
                                     <h5 class="event-title-4"></h5>
                                 </a>
                                 <p class="event-info-4"></p>
                             </div>
-                            <div>
-                                <a class="event-link-5" target="_blank">
+                            <div id="article5">
+                                <a class="event-links event-link-5" target="_blank">
                                     <h5 class="event-title-5"></h5>
                                 </a>
                                 <p class="event-info-5"></p>
@@ -74,12 +74,105 @@
                         </div>
                     </div>
                     <div class="opts">
-                        <h4>Currency</h4>
+                        <h4>Currency Converter</h4>
                         <div class="currency"></div>
+                        <div class="wrapper">
+                            <form class="currency-form" action="#">
+                              <div class="amount">
+                                <h5>Enter Amount</h5>
+                                <input class="exchange-input" type="text" value="1">
+                              </div>
+                              <div class="drop-list">
+                                <div class="from">
+                                  <h5>From</h5>
+                                  <div class="select-box">
+                                    <img class="flags" src="./Assets/Images/Flags/us.png" alt="flag">
+                                    <select> <!-- Options tag are inserted from JavaScript --> </select>
+                                  </div>
+                                </div>
+                                <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                                <div class="to">
+                                  <h5>To</h5>
+                                  <div class="select-box">
+                                    <img class="flags" src="./Assets/Images/Flags/ca.png" alt="flag">
+                                    <select> <!-- Options tag are inserted from JavaScript --> </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="exchange-rate">Getting exchange rate...</div>
+                              <button>Get Exchange Rate</button>
+                            </form>
+                          </div>
                     </div>
                     <div class="opts">
                         <h4>Weather</h4>
-                        <div class="weather"></div>
+                        <div class="weather">
+                            <div id="weather-card">
+                                <h5 id="date-1"></h5>
+                                <div id="emoji-1"></div>
+                                <div>
+                                    Temp: <span id="current-temp-1"></span>
+                                </div>
+                                <div>
+                                    Wind: <span id="wind-1"></span>
+                                </div>
+                                <div>
+                                    Humidity: <span id="humidity-1"></span>
+                                </div>
+                            </div>
+                            <div id="weather-card">
+                                <h5 id="date-2"></h5>
+                                <div id="emoji-2"></div>
+                                <div>
+                                    Temp: <span id="current-temp-2"></span>
+                                </div>
+                                <div>
+                                    Wind: <span id="wind-2"></span>
+                                </div>
+                                <div>
+                                    Humidity: <span id="humidity-2"></span>
+                                </div>
+                            </div>
+                            <div id="weather-card">
+                                <h5 id="date-3"></h5>
+                                <div id="emoji-3"></div>
+                                <div>
+                                    Temp: <span id="current-temp-3"></span>
+                                </div>
+                                <div>
+                                    Wind: <span id="wind-3"></span>
+                                </div>
+                                <div>
+                                    Humidity: <span id="humidity-3"></span>
+                                </div>
+                            </div>
+                            <div id="weather-card">
+                                <h5 id="date-4"></h5>
+                                <div id="emoji-4"></div>
+                                <div>
+                                    Temp: <span id="current-temp-4"></span>
+                                </div>
+                                <div>
+                                    Wind: <span id="wind-4"></span>
+                                </div>
+                                <div>
+                                    Humidity: <span id="humidity-4"></span>
+                                </div>
+                            </div>
+                            <div id="weather-card">
+                                <h5 id="date-5"></h5>
+                                <div id="emoji-5"></div>
+                                <div>
+                                    Temp: <span id="current-temp-5"></span>
+                                </div>
+                                <div>
+                                    Wind: <span id="wind-5"></span>
+                                </div>
+                                <div>
+                                    Humidity: <span id="humidity-5"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -89,7 +182,7 @@
             <h3>
                 Favorites:
             </h3>
-            <ul class="favorites"></ul>
+            <div class="favorites"></div>
         </section>
     </main>
 
