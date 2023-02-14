@@ -195,6 +195,10 @@ input {
     padding: 1px;
 }
 
+.select-display {
+    display: flex;
+}
+
 .select-box {
     padding: 1px;
 }
