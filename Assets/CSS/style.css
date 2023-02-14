@@ -175,6 +175,38 @@ input {
     font-weight: bold;
 }
 
+.exchange-input {
+    width: 10rem;
+}
+
+.wrapper {
+    margin: 1rem;
+}
+
+.currency-form {
+    display: flex;
+    flex-flow: column;
+    justify-content:space-around;
+    padding-right: 10px;
+}
+
+.amount {
+    padding: 1px;
+}
+
+.drop-list {
+    padding: 1px;
+}
+
+.select-box {
+    padding: 1px;
+}
+
+.flags {
+    max-height: 1rem;
+    width: 2rem;
+}
+
 .weather {
     display: none;
 }

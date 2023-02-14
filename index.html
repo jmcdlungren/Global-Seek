@@ -74,8 +74,35 @@
                         </div>
                     </div>
                     <div class="opts">
-                        <h4>Currency</h4>
+                        <h4>Currency Converter</h4>
                         <div class="currency"></div>
+                        <div class="wrapper">
+                            <form class="currency-form" action="#">
+                              <div class="amount">
+                                <h5>Enter Amount</h5>
+                                <input class="exchange-input" type="text" value="1">
+                              </div>
+                              <div class="drop-list">
+                                <div class="from">
+                                  <h5>From</h5>
+                                  <div class="select-box">
+                                    <img class="flags" src="./Assets/Images/Flags/us.png" alt="flag">
+                                    <select> <!-- Options tag are inserted from JavaScript --> </select>
+                                  </div>
+                                </div>
+                                <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                                <div class="to">
+                                  <h5>To</h5>
+                                  <div class="select-box">
+                                    <img class="flags" src="./Assets/Images/Flags/ca.png" alt="flag">
+                                    <select> <!-- Options tag are inserted from JavaScript --> </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="exchange-rate">Getting exchange rate...</div>
+                              <button>Get Exchange Rate</button>
+                            </form>
+                          </div>
                     </div>
                     <div class="opts">
                         <h4>Weather</h4>
