@@ -40,7 +40,7 @@ h5 {
     font-size: 13pt;
 }
 
-.btn {
+/* .btn {
     border: 1px solid black;
     width: 25rem;
     padding: 10px;
@@ -49,7 +49,7 @@ h5 {
     margin-left: 10px;
     margin-top: 10px;
     font-size: 12pt;
-}
+} */
 
 input {
     margin-left: 10px;
@@ -69,9 +69,6 @@ input {
     flex-direction: column;
 }
 
-.btn:hover {
-    background-color: #E8E8E8;
-}
 
 .globalHeader {
     margin-bottom: 10px;
@@ -196,6 +193,10 @@ input {
 
 .drop-list {
     padding: 1px;
+}
+
+.select-display {
+    display: flex;
 }
 
 .select-box {
